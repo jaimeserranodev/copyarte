@@ -1,0 +1,20 @@
+.container {
+  color: #374151; /* Color del texto normal */
+  padding: 8px 16px; /* Espaciado alrededor del texto */
+  display: inline-block; /* Hace que el enlace no ocupe todo el ancho disponible */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Suaviza la transición de colores */
+  border-radius: 9999px; /* Bordes muy redondeados para un aspecto circular */
+  font-weight: 500; /* Un poco más de peso para el texto */
+}
+
+.container:hover, .container:focus {
+  color: #f97316; /* Cambia el color del texto al hacer hover */
+  background-color: #fef3c7; /* Fondo ligero al hacer hover */
+  text-decoration: none; /* Asegura que no hay subrayado al hacer hover */
+}
+
+.active {
+  color: #f97316; /* Color del texto para el enlace activo */
+  background-color: #fef3c7; /* Fondo para el enlace activo */
+}
