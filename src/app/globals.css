@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Raleway:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
@@ -17,6 +19,19 @@
   }
 }
 
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background-color: #67e8f9;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after,
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  color: #67e8f9;
+}
+
 body {
   background-color: var(--bg);
   color: var(--text);
@@ -24,7 +39,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   
-  font-family: 'Raleway', cursive;
+  font-family: 'Roboto', cursive;
 }
 
 @layer utilities {
@@ -38,13 +53,15 @@ a {
 }
 
 h1 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 1000;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  color: white;
 }
 
 p {
   font-family: 'Gloria Hallelujah', cursive;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 .bg-highlight {
